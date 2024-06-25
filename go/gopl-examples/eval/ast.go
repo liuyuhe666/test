@@ -1,5 +1,6 @@
 package eval
 
+// 表达式
 type Expr interface {
 	Eval(env Env) float64
 	Check(vars map[Var]bool) error

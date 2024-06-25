@@ -15,6 +15,7 @@ func (literal) Check(vars map[Var]bool) error {
 }
 
 func (u unary) Check(vars map[Var]bool) error {
+	// 单目运算符只能为 + -
 	if !strings.ContainsRune("+-", u.op) {
 		return fmt.Errorf("unexpected unary op %q", u.op)
 	}
@@ -22,6 +23,7 @@ func (u unary) Check(vars map[Var]bool) error {
 }
 
 func (b binary) Check(vars map[Var]bool) error {
+	// 双目运算符只能为 + - * /
 	if !strings.ContainsRune("+-*/", b.op) {
 		return fmt.Errorf("unexpected binary op %q", b.op)
 	}
@@ -31,6 +33,7 @@ func (b binary) Check(vars map[Var]bool) error {
 	return b.y.Check(vars)
 }
 
+// 支持的函数调用
 var numParams = map[string]int{"pow": 2, "sin": 1, "sqrt": 1}
 
 func (c call) Check(vars map[Var]bool) error {
@@ -38,6 +41,7 @@ func (c call) Check(vars map[Var]bool) error {
 	if !ok {
 		return fmt.Errorf("unknown function %q", c.fn)
 	}
+	// 检查参数是否符合要求
 	if len(c.args) != arity {
 		return fmt.Errorf("call to %s has %d args, want %d",
 			c.fn, len(c.args), arity)
