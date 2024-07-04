@@ -1,0 +1,33 @@
+@hostname = httpbin.org
+@port = 443
+@host = {{hostname}}:{{port}}
+@contentType = application/json
+@createdAt = {{$datetime iso8601}}
+@modifiedBy = {{$processEnv USERNAME}}
+@ua = Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+@page = 1
+@pageSize = 10
+
+###
+GET https://{{host}}/get?page={{page}}&pageSize={{pageSize}} HTTP/1.1
+Content-Type: {{contentType}}
+User-Agent: {{ua}}
+
+###
+POST https://{{host}}/post HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+username=foo
+&password=bar
+
+### 
+POST https://{{host}}/post HTTP/1.1
+Content-Type: {{contentType}}
+User-Agent: {{ua}}
+
+{
+    "username": "admin",
+    "password": "admin",
+    "createdAt": {{createdAt}},
+    "modifiedBy": {{modifiedBy}},
+}
