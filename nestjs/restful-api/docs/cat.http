@@ -1,0 +1,25 @@
+# 添加猫咪
+POST http://localhost:3000/cat
+Content-Type: application/json
+
+{
+    "nickname": "小鱼丸",
+    "species": "英国短毛猫"
+}
+
+# 查找猫咪
+###
+GET http://localhost:3000/cat/1
+
+# 修改猫咪
+###
+PUT http://localhost:3000/cat/1
+Content-Type: application/json
+
+{
+    "species": "波斯猫"
+}
+
+# 删除猫咪
+###
+DELETE http://localhost:3000/cat/2
