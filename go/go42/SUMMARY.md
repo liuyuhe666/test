@@ -4,7 +4,7 @@
 
 - [x] [第二章 数据类型](https://github.com/ffhelicopter/Go42/blob/master/content/42_02_datatype.md)
 
-- [ ] [第三章 变量](https://github.com/ffhelicopter/Go42/blob/master/content/42_03_var.md)
+- [x] [第三章 变量](https://github.com/ffhelicopter/Go42/blob/master/content/42_03_var.md)
 
 - [ ] [第四章 常量](https://github.com/ffhelicopter/Go42/blob/master/content/42_04_const.md)
 
