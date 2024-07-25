@@ -6,15 +6,15 @@
 
 - [x] [第三章 变量](https://github.com/ffhelicopter/Go42/blob/master/content/42_03_var.md)
 
-- [ ] [第四章 常量](https://github.com/ffhelicopter/Go42/blob/master/content/42_04_const.md)
+- [x] [第四章 常量](https://github.com/ffhelicopter/Go42/blob/master/content/42_04_const.md)
 
-- [ ] [第五章 作用域](https://github.com/ffhelicopter/Go42/blob/master/content/42_05_scope.md)
+- [x] [第五章 作用域](https://github.com/ffhelicopter/Go42/blob/master/content/42_05_scope.md)
 
-- [ ] [第六章 约定和惯例](https://github.com/ffhelicopter/Go42/blob/master/content/42_06_convention.md)
+- [x] [第六章 约定和惯例](https://github.com/ffhelicopter/Go42/blob/master/content/42_06_convention.md)
 
-- [ ] [第七章 代码结构化](https://github.com/ffhelicopter/Go42/blob/master/content/42_07_package.md)
+- [x] [第七章 代码结构化](https://github.com/ffhelicopter/Go42/blob/master/content/42_07_package.md)
 
-- [ ] [第八章 Go项目开发与编译](https://github.com/ffhelicopter/Go42/blob/master/content/42_08_project.md)
+- [x] [第八章 Go项目开发与编译](https://github.com/ffhelicopter/Go42/blob/master/content/42_08_project.md)
 
 - [ ] [第九章 运算符](https://github.com/ffhelicopter/Go42/blob/master/content/42_09_operator.md)
 
