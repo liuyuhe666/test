@@ -1,0 +1,2 @@
+org.example.spi.demo.service.impl.FileSearch
+org.example.spi.demo.service.impl.DatabaseSearch
